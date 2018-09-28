@@ -38,13 +38,64 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-4",
+					"linecount" : 4,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 391.0, 68.0, 150.0, 60.0 ],
+					"style" : "",
+					"text" : "First level:\n1 - Tonic\n2 - Predominant\n3 - Dominant"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"coll_data" : 					{
+						"count" : 7,
+						"data" : [ 							{
+								"key" : 1,
+								"value" : [ 0, 4, 7 ]
+							}
+, 							{
+								"key" : 2,
+								"value" : [ 2, 5, 9 ]
+							}
+, 							{
+								"key" : 3,
+								"value" : [ 4, 7, 11 ]
+							}
+, 							{
+								"key" : 4,
+								"value" : [ 5, 9, 0 ]
+							}
+, 							{
+								"key" : 5,
+								"value" : [ 7, 11, 2 ]
+							}
+, 							{
+								"key" : 6,
+								"value" : [ 9, 0, 4 ]
+							}
+, 							{
+								"key" : 7,
+								"value" : [ 11, 2, 5 ]
+							}
+ ]
+					}
+,
 					"id" : "obj-45",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 269.0, 458.0, 124.0, 22.0 ],
-					"style" : ""
+					"numoutlets" : 4,
+					"outlettype" : [ "", "", "", "" ],
+					"patching_rect" : [ 269.0, 458.0, 103.0, 22.0 ],
+					"saved_object_attributes" : 					{
+						"embed" : 1
+					}
+,
+					"style" : "",
+					"text" : "coll chord-creator"
 				}
 
 			}
@@ -65,7 +116,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 0.0, 0.0, 640.0, 480.0 ],
+						"rect" : [ 59.0, 103.0, 640.0, 480.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
