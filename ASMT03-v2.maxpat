@@ -82,7 +82,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 105.0, 423.0, 66.0, 22.0 ],
+					"patching_rect" : [ 267.0, 333.0, 66.0, 22.0 ],
 					"style" : "",
 					"text" : "bucket 2 1"
 				}
