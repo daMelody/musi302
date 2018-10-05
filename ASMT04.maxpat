@@ -38,6 +38,106 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"coll_data" : 					{
+						"count" : 7,
+						"data" : [ 							{
+								"key" : 1,
+								"value" : [ 0, 4, 7 ]
+							}
+, 							{
+								"key" : 2,
+								"value" : [ 2, 5, 9 ]
+							}
+, 							{
+								"key" : 3,
+								"value" : [ 4, 7, 11 ]
+							}
+, 							{
+								"key" : 4,
+								"value" : [ 5, 9, 0 ]
+							}
+, 							{
+								"key" : 5,
+								"value" : [ 7, 11, 2 ]
+							}
+, 							{
+								"key" : 6,
+								"value" : [ 9, 0, 4 ]
+							}
+, 							{
+								"key" : 7,
+								"value" : [ 11, 2, 5 ]
+							}
+ ]
+					}
+,
+					"id" : "obj-6",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 4,
+					"outlettype" : [ "", "", "", "" ],
+					"patching_rect" : [ 288.5, 44.0, 103.0, 22.0 ],
+					"saved_object_attributes" : 					{
+						"embed" : 1
+					}
+,
+					"style" : "",
+					"text" : "coll chordToMidis"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"coll_data" : 					{
+						"count" : 7,
+						"data" : [ 							{
+								"key" : 0,
+								"value" : [ 1, 4, 6 ]
+							}
+, 							{
+								"key" : 2,
+								"value" : [ 2, 5, 7 ]
+							}
+, 							{
+								"key" : 4,
+								"value" : [ 3, 6, 1 ]
+							}
+, 							{
+								"key" : 5,
+								"value" : [ 4, 7, 2 ]
+							}
+, 							{
+								"key" : 7,
+								"value" : [ 5, 1, 3 ]
+							}
+, 							{
+								"key" : 9,
+								"value" : [ 6, 2, 4 ]
+							}
+, 							{
+								"key" : 11,
+								"value" : [ 7, 3, 5 ]
+							}
+ ]
+					}
+,
+					"id" : "obj-1",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 4,
+					"outlettype" : [ "", "", "", "" ],
+					"patching_rect" : [ 64.0, 340.0, 105.0, 22.0 ],
+					"saved_object_attributes" : 					{
+						"embed" : 1
+					}
+,
+					"style" : "",
+					"text" : "coll midiToChords"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-3",
 					"maxclass" : "meter~",
 					"numinlets" : 1,
