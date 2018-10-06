@@ -38,6 +38,20 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-8",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 19.0, 65.0, 150.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 79.0, 61.5, 74.0, 20.0 ],
+					"style" : "",
+					"text" : "ADC~ input"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-131",
 					"maxclass" : "comment",
 					"numinlets" : 1,
@@ -56,7 +70,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 47.0, 301.0, 150.0, 20.0 ],
+					"patching_rect" : [ 19.5, 379.0, 150.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 54.0, 100.0, 124.0, 20.0 ],
 					"style" : "",
@@ -1034,19 +1048,6 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-73",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 453.0, 175.0, 161.0, 20.0 ],
-					"style" : "",
-					"text" : "make coll more weighted...",
-					"textcolor" : [ 0.0, 0.533333, 0.168627, 1.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-65",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -1453,7 +1454,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 169.0, 287.0, 50.0, 22.0 ],
+					"patching_rect" : [ 95.0, 264.5, 50.0, 22.0 ],
 					"style" : ""
 				}
 
@@ -1515,13 +1516,13 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-13",
-					"linecount" : 4,
+					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 516.0, 201.5, 150.0, 60.0 ],
+					"patching_rect" : [ 516.0, 201.5, 159.0, 33.0 ],
 					"style" : "",
-					"text" : "indicates common chord progression (slightly weighted for Dominant -> Tonic resolution)"
+					"text" : " weighted to encourage common chord progression"
 				}
 
 			}
@@ -1535,27 +1536,27 @@
 							}
 , 							{
 								"key" : 2,
-								"value" : [ 4, 5, 7 ]
+								"value" : [ 4, 4, 5, 5, 5, 5, 7, 7, 7, 7 ]
 							}
 , 							{
 								"key" : 3,
-								"value" : [ 1, 2, 3, 6 ]
+								"value" : [ 1, 1, 1, 2, 2, 6, 6, 6, 6, 6 ]
 							}
 , 							{
 								"key" : 4,
-								"value" : [ 1, 2, 5, 7 ]
+								"value" : [ 1, 2, 2, 2, 5, 5, 5, 7, 7, 7 ]
 							}
 , 							{
 								"key" : 5,
-								"value" : [ 1, 1, 6, 7 ]
+								"value" : [ 1, 1, 1, 1, 1, 6, 6, 7, 7, 7 ]
 							}
 , 							{
 								"key" : 6,
-								"value" : [ 1, 2, 4 ]
+								"value" : [ 1, 1, 2, 2, 2, 2, 4, 4, 4, 4 ]
 							}
 , 							{
 								"key" : 7,
-								"value" : [ 1, 1, 5, 6 ]
+								"value" : [ 1, 1, 1, 1, 1, 5, 5, 5, 6, 6 ]
 							}
  ]
 					}
@@ -1673,6 +1674,8 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "float" ],
 					"patching_rect" : [ 93.5, 85.0, 80.0, 13.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 173.0, 67.0, 80.0, 13.0 ],
 					"style" : ""
 				}
 
@@ -2049,7 +2052,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 95.0, 241.0, 50.0, 22.0 ],
+					"patching_rect" : [ 95.0, 234.0, 50.0, 22.0 ],
 					"style" : ""
 				}
 
