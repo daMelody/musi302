@@ -153,7 +153,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 4,
 					"outlettype" : [ "int", "int", "int", "int" ],
-					"patching_rect" : [ 241.25, 36.0, 50.5, 22.0 ],
+					"patching_rect" : [ 235.0, 55.0, 50.5, 22.0 ],
 					"style" : "",
 					"text" : "key"
 				}
@@ -230,7 +230,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 275.0, 242.0, 50.0, 22.0 ],
+					"patching_rect" : [ 281.0, 235.0, 50.0, 22.0 ],
 					"style" : ""
 				}
 

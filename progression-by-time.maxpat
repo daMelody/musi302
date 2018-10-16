@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 59.0, 103.0, 640.0, 480.0 ],
+		"rect" : [ 34.0, 78.0, 908.0, 688.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -236,7 +236,6 @@
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 249.5, 615.0, 50.0, 22.0 ],
-					"presentation_rect" : [ 356.5, 359.0, 0.0, 0.0 ],
 					"style" : ""
 				}
 
@@ -250,7 +249,6 @@
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 181.5, 615.0, 50.0, 22.0 ],
-					"presentation_rect" : [ 288.5, 362.0, 0.0, 0.0 ],
 					"style" : ""
 				}
 
@@ -264,7 +262,6 @@
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 120.5, 615.0, 50.0, 22.0 ],
-					"presentation_rect" : [ 227.5, 361.0, 0.0, 0.0 ],
 					"style" : ""
 				}
 
@@ -278,7 +275,6 @@
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 52.5, 610.0, 50.0, 22.0 ],
-					"presentation_rect" : [ 157.0, 357.0, 0.0, 0.0 ],
 					"style" : ""
 				}
 
@@ -465,6 +461,27 @@
 			}
 , 			{
 				"box" : 				{
+					"coll_data" : 					{
+						"count" : 4,
+						"data" : [ 							{
+								"key" : 0,
+								"value" : [ 1, 5 ]
+							}
+, 							{
+								"key" : 6,
+								"value" : [ 1, 5, 6 ]
+							}
+, 							{
+								"key" : 15,
+								"value" : [ 1, 4, 5, 6 ]
+							}
+, 							{
+								"key" : 21,
+								"value" : [ 1, 4, 5, 6, 7 ]
+							}
+ ]
+					}
+,
 					"id" : "obj-16",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -472,7 +489,7 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 107.5, 159.0, 74.0, 22.0 ],
 					"saved_object_attributes" : 					{
-						"embed" : 0
+						"embed" : 1
 					}
 ,
 					"style" : "",
@@ -927,10 +944,6 @@
 
 			}
  ],
-		"parameters" : 		{
-
-		}
-,
 		"dependency_cache" : [  ],
 		"autosave" : 0
 	}
