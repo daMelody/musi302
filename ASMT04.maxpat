@@ -45,7 +45,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 860.0, 220.0, 259.0, 100.0 ],
 					"style" : "",
-					"text" : "~ use THRESH to collect previous 12 notes\n\n~ based on collected notes, randomly choose a suitable key/mode\n\n~ when ZL.SECT returns a bang for nothing in common, new suitable key will be chosen"
+					"text" : "~ use THRESH to collect previous 6 notes\n\n~ based on collected notes, randomly choose a suitable key/mode\n\n~ when ZL.SECT returns a bang for nothing in common, new suitable key will be chosen"
 				}
 
 			}
@@ -82,7 +82,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 71.0, 421.0, 106.5, 33.0 ],
+					"patching_rect" : [ 71.0, 421.0, 109.0, 33.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 2,
 					"presentation_rect" : [ 260.0, 31.0, 112.0, 33.0 ],
@@ -1634,16 +1634,16 @@
 					"bgfillcolor_type" : "gradient",
 					"gradient" : 1,
 					"id" : "obj-32",
-					"linecount" : 3,
+					"linecount" : 2,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 411.0, 258.0, 50.0, 49.0 ],
+					"patching_rect" : [ 411.0, 258.0, 50.0, 35.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 243.0, 134.0, 111.0, 22.0 ],
 					"style" : "",
-					"text" : "1 2 2 2 5 5 5 7 7 7"
+					"text" : "2 3 4 5 6 7"
 				}
 
 			}
@@ -2808,7 +2808,7 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "mode.finder.js",
-				"bootpath" : "~/Documents/VC 4.1/MUSI 302/patches",
+				"bootpath" : "~/Documents/vassar/VC 4.1/MUSI 302/patches",
 				"patcherrelativepath" : ".",
 				"type" : "TEXT",
 				"implicit" : 1
