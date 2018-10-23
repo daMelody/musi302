@@ -54,7 +54,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 0.0, 0.0, 640.0, 480.0 ],
+						"rect" : [ 59.0, 103.0, 640.0, 480.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -403,7 +403,7 @@
 									"outlettype" : [ "", "" ],
 									"patching_rect" : [ 367.0, 546.5, 49.0, 22.0 ],
 									"style" : "",
-									"text" : "zl.iter 4",
+									"text" : "zl.iter 3",
 									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 
