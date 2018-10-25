@@ -38,6 +38,50 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"fontsize" : 18.0,
+					"id" : "obj-51",
+					"linecount" : 2,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 677.0, 618.0, 220.0, 47.0 ],
+					"style" : "",
+					"text" : "issue 2: volume modification required"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontsize" : 18.0,
+					"id" : "obj-43",
+					"linecount" : 6,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 745.0, 414.0, 241.0, 127.0 ],
+					"style" : "",
+					"text" : "issue 1: fiddle~ continuously finds the pitch and outputs it... if chord (sound) output is triggered automatically, chord will continuously change and keep attacking"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bgcolor" : [ 0.439216, 0.74902, 0.254902, 1.0 ],
+					"id" : "obj-10",
+					"linecount" : 2,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 489.0, 97.0, 144.0, 33.0 ],
+					"style" : "",
+					"text" : "CLOCKER automatically re-starts at 0",
+					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bgcolor" : [ 0.952941, 0.564706, 0.098039, 1.0 ],
 					"id" : "obj-170",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -957,6 +1001,7 @@
 			}
 , 			{
 				"box" : 				{
+					"bgcolor" : [ 0.952941, 0.564706, 0.098039, 1.0 ],
 					"id" : "obj-154",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -1709,6 +1754,7 @@
 			}
 , 			{
 				"box" : 				{
+					"bgcolor" : [ 0.113339, 0.606332, 0.609597, 1.0 ],
 					"id" : "obj-148",
 					"maxclass" : "number",
 					"numinlets" : 1,
@@ -1728,7 +1774,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 257.25, 811.0, 36.0, 22.0 ],
+					"patching_rect" : [ 263.5, 782.0, 36.0, 22.0 ],
 					"style" : "",
 					"text" : "pack"
 				}
@@ -1741,7 +1787,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 3,
 					"numoutlets" : 0,
-					"patching_rect" : [ 257.25, 841.0, 51.0, 22.0 ],
+					"patching_rect" : [ 263.5, 821.0, 51.0, 22.0 ],
 					"style" : "",
 					"text" : "noteout"
 				}
@@ -1757,20 +1803,22 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "int", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 107.25, 732.0, 336.0, 53.0 ],
+					"patching_rect" : [ 113.5, 703.0, 336.0, 53.0 ],
 					"presentation_rect" : [ 60.0, 60.0, 336.0, 53.0 ],
-					"style" : ""
+					"style" : "",
+					"varname" : "kslider"
 				}
 
 			}
 , 			{
 				"box" : 				{
+					"bgcolor" : [ 0.952941, 0.564706, 0.098039, 1.0 ],
 					"id" : "obj-50",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 107.25, 694.0, 88.0, 22.0 ],
+					"patching_rect" : [ 113.5, 665.0, 88.0, 22.0 ],
 					"style" : "",
 					"text" : "prepend chord"
 				}
@@ -1778,12 +1826,13 @@
 			}
 , 			{
 				"box" : 				{
+					"bgcolor" : [ 0.952941, 0.564706, 0.098039, 1.0 ],
 					"id" : "obj-49",
 					"maxclass" : "newobj",
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 107.25, 661.0, 45.0, 22.0 ],
+					"patching_rect" : [ 113.5, 632.0, 45.0, 22.0 ],
 					"style" : "",
 					"text" : "zl.lace"
 				}
@@ -1791,6 +1840,16 @@
 			}
 , 			{
 				"box" : 				{
+					"bgcolor" : [ 0.952941, 0.564706, 0.098039, 1.0 ],
+					"bgcolor2" : [ 0.952941, 0.564706, 0.098039, 1.0 ],
+					"bgfillcolor_angle" : 270.0,
+					"bgfillcolor_autogradient" : 0.0,
+					"bgfillcolor_color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+					"bgfillcolor_color1" : [ 0.952941, 0.564706, 0.098039, 1.0 ],
+					"bgfillcolor_color2" : [ 0.952941, 0.564706, 0.098039, 1.0 ],
+					"bgfillcolor_proportion" : 0.39,
+					"bgfillcolor_type" : "gradient",
+					"gradient" : 1,
 					"id" : "obj-46",
 					"maxclass" : "message",
 					"numinlets" : 2,
@@ -1804,6 +1863,16 @@
 			}
 , 			{
 				"box" : 				{
+					"bgcolor" : [ 0.952941, 0.564706, 0.098039, 1.0 ],
+					"bgcolor2" : [ 0.952941, 0.564706, 0.098039, 1.0 ],
+					"bgfillcolor_angle" : 270.0,
+					"bgfillcolor_autogradient" : 0.0,
+					"bgfillcolor_color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+					"bgfillcolor_color1" : [ 0.952941, 0.564706, 0.098039, 1.0 ],
+					"bgfillcolor_color2" : [ 0.952941, 0.564706, 0.098039, 1.0 ],
+					"bgfillcolor_proportion" : 0.39,
+					"bgfillcolor_type" : "gradient",
+					"gradient" : 1,
 					"id" : "obj-44",
 					"maxclass" : "message",
 					"numinlets" : 2,
@@ -1817,6 +1886,7 @@
 			}
 , 			{
 				"box" : 				{
+					"bgcolor" : [ 0.952941, 0.564706, 0.098039, 1.0 ],
 					"id" : "obj-41",
 					"maxclass" : "newobj",
 					"numinlets" : 2,
@@ -1830,6 +1900,7 @@
 			}
 , 			{
 				"box" : 				{
+					"bgcolor" : [ 0.952941, 0.564706, 0.098039, 1.0 ],
 					"id" : "obj-40",
 					"maxclass" : "newobj",
 					"numinlets" : 2,
@@ -1843,6 +1914,16 @@
 			}
 , 			{
 				"box" : 				{
+					"bgcolor" : [ 0.952941, 0.564706, 0.098039, 1.0 ],
+					"bgcolor2" : [ 0.952941, 0.564706, 0.098039, 1.0 ],
+					"bgfillcolor_angle" : 270.0,
+					"bgfillcolor_autogradient" : 0.0,
+					"bgfillcolor_color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+					"bgfillcolor_color1" : [ 0.952941, 0.564706, 0.098039, 1.0 ],
+					"bgfillcolor_color2" : [ 0.952941, 0.564706, 0.098039, 1.0 ],
+					"bgfillcolor_proportion" : 0.39,
+					"bgfillcolor_type" : "gradient",
+					"gradient" : 1,
 					"id" : "obj-39",
 					"maxclass" : "message",
 					"numinlets" : 2,
@@ -1856,6 +1937,7 @@
 			}
 , 			{
 				"box" : 				{
+					"bgcolor" : [ 0.952941, 0.564706, 0.098039, 1.0 ],
 					"id" : "obj-33",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -1869,6 +1951,7 @@
 			}
 , 			{
 				"box" : 				{
+					"bgcolor" : [ 0.952941, 0.564706, 0.098039, 1.0 ],
 					"id" : "obj-30",
 					"maxclass" : "newobj",
 					"numinlets" : 2,
@@ -1882,6 +1965,7 @@
 			}
 , 			{
 				"box" : 				{
+					"bgcolor" : [ 0.952941, 0.564706, 0.098039, 1.0 ],
 					"id" : "obj-29",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -2096,7 +2180,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 178.0, 278.0, 50.0, 22.0 ],
 									"style" : "",
-									"text" : "1 4 6"
+									"text" : "1"
 								}
 
 							}
@@ -5975,7 +6059,8 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 478.0, 60.0, 92.0, 20.0 ],
 					"style" : "",
-					"text" : "[BACKSPACE]"
+					"text" : "[BACKSPACE]",
+					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
 
 			}
@@ -5988,7 +6073,8 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 278.0, 60.0, 62.0, 20.0 ],
 					"style" : "",
-					"text" : "[SPACE]"
+					"text" : "[SPACE]",
+					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
 
 			}
@@ -6043,7 +6129,8 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 298.0, 97.0, 43.0, 20.0 ],
 					"style" : "",
-					"text" : "Begin "
+					"text" : "Begin ",
+					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
 
 			}
@@ -7320,6 +7407,10 @@
 
 			}
  ],
+		"parameters" : 		{
+
+		}
+,
 		"dependency_cache" : [ 			{
 				"name" : "mode.finder.js",
 				"bootpath" : "~/Documents/vassar/VC 4.1/MUSI 302/patches",
