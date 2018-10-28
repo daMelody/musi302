@@ -4,12 +4,12 @@
 		"appversion" : 		{
 			"major" : 7,
 			"minor" : 3,
-			"revision" : 4,
+			"revision" : 5,
 			"architecture" : "x86",
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 59.0, 103.0, 871.0, 586.0 ],
+		"rect" : [ 395.0, 164.0, 871.0, 586.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -186,7 +186,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 334.0, 169.0, 78.0, 22.0 ],
 					"style" : "",
-					"text" : "0.000015"
+					"text" : "0.00033"
 				}
 
 			}
@@ -224,7 +224,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 78.0, 0.0, 150.0, 20.0 ],
 					"style" : "",
-					"text" : "ENVELOPE-TRACKING"
+					"text" : "ENVELOPE-TRACKING-2"
 				}
 
 			}
