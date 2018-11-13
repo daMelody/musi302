@@ -38,6 +38,770 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-47",
+					"maxclass" : "newobj",
+					"numinlets" : 4,
+					"numoutlets" : 1,
+					"outlettype" : [ "signal" ],
+					"patcher" : 					{
+						"fileversion" : 1,
+						"appversion" : 						{
+							"major" : 7,
+							"minor" : 3,
+							"revision" : 5,
+							"architecture" : "x86",
+							"modernui" : 1
+						}
+,
+						"rect" : [ 0.0, 0.0, 640.0, 480.0 ],
+						"bglocked" : 0,
+						"openinpresentation" : 0,
+						"default_fontsize" : 12.0,
+						"default_fontface" : 0,
+						"default_fontname" : "Arial",
+						"gridonopen" : 1,
+						"gridsize" : [ 15.0, 15.0 ],
+						"gridsnaponopen" : 1,
+						"objectsnaponopen" : 1,
+						"statusbarvisible" : 2,
+						"toolbarvisible" : 1,
+						"lefttoolbarpinned" : 0,
+						"toptoolbarpinned" : 0,
+						"righttoolbarpinned" : 0,
+						"bottomtoolbarpinned" : 0,
+						"toolbars_unpinned_last_save" : 0,
+						"tallnewobj" : 0,
+						"boxanimatetime" : 200,
+						"enablehscroll" : 1,
+						"enablevscroll" : 1,
+						"devicewidth" : 0.0,
+						"description" : "",
+						"digest" : "",
+						"tags" : "",
+						"style" : "",
+						"subpatcher_template" : "",
+						"boxes" : [ 							{
+								"box" : 								{
+									"id" : "obj-38",
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 225.0, 419.0, 116.0, 22.0 ],
+									"style" : "",
+									"text" : "\"In to Out Delay\" $1"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-39",
+									"maxclass" : "newobj",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "float" ],
+									"patching_rect" : [ 225.0, 382.0, 41.0, 22.0 ],
+									"style" : "",
+									"text" : "/ 100."
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-40",
+									"maxclass" : "newobj",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "int" ],
+									"patching_rect" : [ 225.0, 346.0, 75.0, 22.0 ],
+									"style" : "",
+									"text" : "random 100"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"autosave" : 1,
+									"bgmode" : 0,
+									"border" : 0,
+									"clickthrough" : 0,
+									"id" : "obj-41",
+									"maxclass" : "newobj",
+									"numinlets" : 2,
+									"numoutlets" : 8,
+									"offset" : [ 0.0, 0.0 ],
+									"outlettype" : [ "signal", "signal", "", "list", "int", "", "", "" ],
+									"patching_rect" : [ 225.0, 463.0, 300.0, 100.0 ],
+									"presentation_rect" : [ 686.0, 875.0, 300.0, 100.0 ],
+									"save" : [ "#N", "vst~", "loaduniqueid", 0, "AUSampleDelay.auinfo", ";" ],
+									"saved_attribute_attributes" : 									{
+										"valueof" : 										{
+											"parameter_invisible" : 1,
+											"parameter_longname" : "vst~[5]",
+											"parameter_shortname" : "vst~[3]",
+											"parameter_type" : 3
+										}
+
+									}
+,
+									"saved_object_attributes" : 									{
+										"annotation_name" : "",
+										"parameter_enable" : 1
+									}
+,
+									"snapshot" : 									{
+										"filetype" : "C74Snapshot",
+										"version" : 2,
+										"minorversion" : 0,
+										"name" : "snapshotlist",
+										"origin" : "vst~",
+										"type" : "list",
+										"subtype" : "Undefined",
+										"embed" : 1,
+										"snapshot" : 										{
+											"pluginname" : "AUSampleDelay.auinfo",
+											"plugindisplayname" : "AUSampleDelay",
+											"pluginsavedname" : "AUSampleDelay",
+											"pluginsaveduniqueid" : 0,
+											"version" : 1,
+											"isbank" : 0,
+											"isbase64" : 1,
+											"blob" : "159.hAGaoMGcv.i0AHv.DTfAGfPBJr.CTQWdvU1UyUmXzkGbkwUag4VclE1XzUmbkIGUjEFcgQkag0VYWYWYxMWZu4lDgUmY3IwbjwVdRDFbvw1SPPA..............D......EkkumgUUtQWZzwVYjAA.HTgFh7BM4DjQKA0YvA.......DP..........z....................fb"
+										}
+,
+										"snapshotlist" : 										{
+											"current_snapshot" : 0,
+											"entries" : [ 												{
+													"filetype" : "C74Snapshot",
+													"version" : 2,
+													"minorversion" : 0,
+													"name" : "AUSampleDelay",
+													"origin" : "AUSampleDelay.auinfo",
+													"type" : "AudioUnit",
+													"subtype" : "AudioEffect",
+													"embed" : 0,
+													"snapshot" : 													{
+														"pluginname" : "AUSampleDelay.auinfo",
+														"plugindisplayname" : "AUSampleDelay",
+														"pluginsavedname" : "AUSampleDelay",
+														"pluginsaveduniqueid" : 0,
+														"version" : 1,
+														"isbank" : 0,
+														"isbase64" : 1,
+														"blob" : "159.hAGaoMGcv.i0AHv.DTfAGfPBJr.CTQWdvU1UyUmXzkGbkwUag4VclE1XzUmbkIGUjEFcgQkag0VYWYWYxMWZu4lDgUmY3IwbjwVdRDFbvw1SPPA..............D......EkkumgUUtQWZzwVYjAA.HTgFh7BM4DjQKA0YvA.......DP..........z....................fb"
+													}
+,
+													"fileref" : 													{
+														"name" : "AUSampleDelay",
+														"filename" : "AUSampleDelay.maxsnap",
+														"filepath" : "~/Documents/Max 7/Snapshots",
+														"filepos" : -1,
+														"snapshotfileid" : "85efcda684acd31b46f937eb79967c93"
+													}
+
+												}
+, 												{
+													"filetype" : "C74Snapshot",
+													"version" : 2,
+													"minorversion" : 0,
+													"name" : "AUSampleDelay",
+													"origin" : "AUSampleDelay.auinfo",
+													"type" : "AudioUnit",
+													"subtype" : "AudioEffect",
+													"embed" : 0,
+													"fileref" : 													{
+														"name" : "AUSampleDelay",
+														"filename" : "AUSampleDelay_20181113.maxsnap",
+														"filepath" : "~/Documents/Max 7/Snapshots",
+														"filepos" : -1,
+														"snapshotfileid" : "a25ce17ac00772c86c76045edfa47235"
+													}
+
+												}
+, 												{
+													"filetype" : "C74Snapshot",
+													"version" : 2,
+													"minorversion" : 0,
+													"name" : "AUSampleDelay",
+													"origin" : "AUSampleDelay.auinfo",
+													"type" : "AudioUnit",
+													"subtype" : "AudioEffect",
+													"embed" : 0,
+													"fileref" : 													{
+														"name" : "AUSampleDelay",
+														"filename" : "AUSampleDelay_20181113_1.maxsnap",
+														"filepath" : "~/Documents/Max 7/Snapshots",
+														"filepos" : -1,
+														"snapshotfileid" : "3fafb949bc00523ea176cf31202b5df8"
+													}
+
+												}
+ ]
+										}
+
+									}
+,
+									"style" : "",
+									"text" : "vst~ AUSampleDelay.auinfo",
+									"varname" : "vst~[2]",
+									"viewvisibility" : 1
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-28",
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 386.0, 173.0, 116.0, 22.0 ],
+									"style" : "",
+									"text" : "\"In to Out Delay\" $1"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-29",
+									"maxclass" : "newobj",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "float" ],
+									"patching_rect" : [ 386.0, 136.0, 41.0, 22.0 ],
+									"style" : "",
+									"text" : "/ 100."
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-32",
+									"maxclass" : "newobj",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "int" ],
+									"patching_rect" : [ 386.0, 100.0, 75.0, 22.0 ],
+									"style" : "",
+									"text" : "random 100"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"autosave" : 1,
+									"bgmode" : 0,
+									"border" : 0,
+									"clickthrough" : 0,
+									"id" : "obj-37",
+									"maxclass" : "newobj",
+									"numinlets" : 2,
+									"numoutlets" : 8,
+									"offset" : [ 0.0, 0.0 ],
+									"outlettype" : [ "signal", "signal", "", "list", "int", "", "", "" ],
+									"patching_rect" : [ 386.0, 217.0, 300.0, 100.0 ],
+									"presentation_rect" : [ 847.0, 631.0, 300.0, 100.0 ],
+									"save" : [ "#N", "vst~", "loaduniqueid", 0, "AUSampleDelay.auinfo", ";" ],
+									"saved_attribute_attributes" : 									{
+										"valueof" : 										{
+											"parameter_invisible" : 1,
+											"parameter_longname" : "vst~[4]",
+											"parameter_shortname" : "vst~[3]",
+											"parameter_type" : 3
+										}
+
+									}
+,
+									"saved_object_attributes" : 									{
+										"annotation_name" : "",
+										"parameter_enable" : 1
+									}
+,
+									"snapshot" : 									{
+										"filetype" : "C74Snapshot",
+										"version" : 2,
+										"minorversion" : 0,
+										"name" : "snapshotlist",
+										"origin" : "vst~",
+										"type" : "list",
+										"subtype" : "Undefined",
+										"embed" : 1,
+										"snapshot" : 										{
+											"pluginname" : "AUSampleDelay.auinfo",
+											"plugindisplayname" : "AUSampleDelay",
+											"pluginsavedname" : "AUSampleDelay",
+											"pluginsaveduniqueid" : 0,
+											"version" : 1,
+											"isbank" : 0,
+											"isbase64" : 1,
+											"blob" : "159.hAGaoMGcv.i0AHv.DTfAGfPBJr.CTQWdvU1UyUmXzkGbkwUag4VclE1XzUmbkIGUjEFcgQkag0VYWYWYxMWZu4lDgUmY3IwbjwVdRDFbvw1SPPA..............D......E81xyfUUtQWZzwVYjAA.HTgFh7BM4DjQKA0YvA.......DP..........z....................fb"
+										}
+,
+										"snapshotlist" : 										{
+											"current_snapshot" : 0,
+											"entries" : [ 												{
+													"filetype" : "C74Snapshot",
+													"version" : 2,
+													"minorversion" : 0,
+													"name" : "AUSampleDelay",
+													"origin" : "AUSampleDelay.auinfo",
+													"type" : "AudioUnit",
+													"subtype" : "AudioEffect",
+													"embed" : 0,
+													"snapshot" : 													{
+														"pluginname" : "AUSampleDelay.auinfo",
+														"plugindisplayname" : "AUSampleDelay",
+														"pluginsavedname" : "AUSampleDelay",
+														"pluginsaveduniqueid" : 0,
+														"version" : 1,
+														"isbank" : 0,
+														"isbase64" : 1,
+														"blob" : "159.hAGaoMGcv.i0AHv.DTfAGfPBJr.CTQWdvU1UyUmXzkGbkwUag4VclE1XzUmbkIGUjEFcgQkag0VYWYWYxMWZu4lDgUmY3IwbjwVdRDFbvw1SPPA..............D......E81xyfUUtQWZzwVYjAA.HTgFh7BM4DjQKA0YvA.......DP..........z....................fb"
+													}
+,
+													"fileref" : 													{
+														"name" : "AUSampleDelay",
+														"filename" : "AUSampleDelay_20181113.maxsnap",
+														"filepath" : "~/Documents/Max 7/Snapshots",
+														"filepos" : -1,
+														"snapshotfileid" : "a25ce17ac00772c86c76045edfa47235"
+													}
+
+												}
+, 												{
+													"filetype" : "C74Snapshot",
+													"version" : 2,
+													"minorversion" : 0,
+													"name" : "AUSampleDelay",
+													"origin" : "AUSampleDelay.auinfo",
+													"type" : "AudioUnit",
+													"subtype" : "AudioEffect",
+													"embed" : 0,
+													"fileref" : 													{
+														"name" : "AUSampleDelay",
+														"filename" : "AUSampleDelay.maxsnap",
+														"filepath" : "~/Documents/Max 7/Snapshots",
+														"filepos" : -1,
+														"snapshotfileid" : "85efcda684acd31b46f937eb79967c93"
+													}
+
+												}
+, 												{
+													"filetype" : "C74Snapshot",
+													"version" : 2,
+													"minorversion" : 0,
+													"name" : "AUSampleDelay",
+													"origin" : "AUSampleDelay.auinfo",
+													"type" : "AudioUnit",
+													"subtype" : "AudioEffect",
+													"embed" : 0,
+													"fileref" : 													{
+														"name" : "AUSampleDelay",
+														"filename" : "AUSampleDelay_20181113_1.maxsnap",
+														"filepath" : "~/Documents/Max 7/Snapshots",
+														"filepos" : -1,
+														"snapshotfileid" : "3fafb949bc00523ea176cf31202b5df8"
+													}
+
+												}
+ ]
+										}
+
+									}
+,
+									"style" : "",
+									"text" : "vst~ AUSampleDelay.auinfo",
+									"varname" : "vst~[1]",
+									"viewvisibility" : 1
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-26",
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 50.0, 173.0, 116.0, 22.0 ],
+									"style" : "",
+									"text" : "\"In to Out Delay\" $1"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-23",
+									"maxclass" : "newobj",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "float" ],
+									"patching_rect" : [ 50.0, 136.0, 41.0, 22.0 ],
+									"style" : "",
+									"text" : "/ 100."
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-21",
+									"maxclass" : "newobj",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "int" ],
+									"patching_rect" : [ 50.0, 100.0, 75.0, 22.0 ],
+									"style" : "",
+									"text" : "random 100"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"autosave" : 1,
+									"bgmode" : 0,
+									"border" : 0,
+									"clickthrough" : 0,
+									"id" : "obj-19",
+									"maxclass" : "newobj",
+									"numinlets" : 2,
+									"numoutlets" : 8,
+									"offset" : [ 0.0, 0.0 ],
+									"outlettype" : [ "signal", "signal", "", "list", "int", "", "", "" ],
+									"patching_rect" : [ 50.0, 217.0, 300.0, 100.0 ],
+									"presentation_rect" : [ 0.0, 0.0, 300.0, 100.0 ],
+									"save" : [ "#N", "vst~", "loaduniqueid", 0, "AUSampleDelay.auinfo", ";" ],
+									"saved_attribute_attributes" : 									{
+										"valueof" : 										{
+											"parameter_invisible" : 1,
+											"parameter_longname" : "vst~[3]",
+											"parameter_shortname" : "vst~[3]",
+											"parameter_type" : 3
+										}
+
+									}
+,
+									"saved_object_attributes" : 									{
+										"annotation_name" : "",
+										"parameter_enable" : 1
+									}
+,
+									"snapshot" : 									{
+										"filetype" : "C74Snapshot",
+										"version" : 2,
+										"minorversion" : 0,
+										"name" : "snapshotlist",
+										"origin" : "vst~",
+										"type" : "list",
+										"subtype" : "Undefined",
+										"embed" : 1,
+										"snapshot" : 										{
+											"pluginname" : "AUSampleDelay.auinfo",
+											"plugindisplayname" : "AUSampleDelay",
+											"pluginsavedname" : "AUSampleDelay",
+											"pluginsaveduniqueid" : 0,
+											"version" : 1,
+											"isbank" : 0,
+											"isbase64" : 1,
+											"blob" : "159.hAGaoMGcv.i0AHv.DTfAGfPBJr.CTQWdvU1UyUmXzkGbkwUag4VclE1XzUmbkIGUjEFcgQkag0VYWYWYxMWZu4lDgUmY3IwbjwVdRDFbvw1SPPA..............D......DQ.SMiUUtQWZzwVYjAA.HTgFh7BM4DjQKA0YvA.......DP..........z....................fb"
+										}
+,
+										"snapshotlist" : 										{
+											"current_snapshot" : 0,
+											"entries" : [ 												{
+													"filetype" : "C74Snapshot",
+													"version" : 2,
+													"minorversion" : 0,
+													"name" : "AUSampleDelay",
+													"origin" : "AUSampleDelay.auinfo",
+													"type" : "AudioUnit",
+													"subtype" : "AudioEffect",
+													"embed" : 0,
+													"snapshot" : 													{
+														"pluginname" : "AUSampleDelay.auinfo",
+														"plugindisplayname" : "AUSampleDelay",
+														"pluginsavedname" : "AUSampleDelay",
+														"pluginsaveduniqueid" : 0,
+														"version" : 1,
+														"isbank" : 0,
+														"isbase64" : 1,
+														"blob" : "159.hAGaoMGcv.i0AHv.DTfAGfPBJr.CTQWdvU1UyUmXzkGbkwUag4VclE1XzUmbkIGUjEFcgQkag0VYWYWYxMWZu4lDgUmY3IwbjwVdRDFbvw1SPPA..............D......DQ.SMiUUtQWZzwVYjAA.HTgFh7BM4DjQKA0YvA.......DP..........z....................fb"
+													}
+,
+													"fileref" : 													{
+														"name" : "AUSampleDelay",
+														"filename" : "AUSampleDelay_20181113_1.maxsnap",
+														"filepath" : "~/Documents/Max 7/Snapshots",
+														"filepos" : -1,
+														"snapshotfileid" : "3fafb949bc00523ea176cf31202b5df8"
+													}
+
+												}
+, 												{
+													"filetype" : "C74Snapshot",
+													"version" : 2,
+													"minorversion" : 0,
+													"name" : "AUSampleDelay",
+													"origin" : "AUSampleDelay.auinfo",
+													"type" : "AudioUnit",
+													"subtype" : "AudioEffect",
+													"embed" : 0,
+													"fileref" : 													{
+														"name" : "AUSampleDelay",
+														"filename" : "AUSampleDelay.maxsnap",
+														"filepath" : "~/Documents/Max 7/Snapshots",
+														"filepos" : -1,
+														"snapshotfileid" : "85efcda684acd31b46f937eb79967c93"
+													}
+
+												}
+, 												{
+													"filetype" : "C74Snapshot",
+													"version" : 2,
+													"minorversion" : 0,
+													"name" : "AUSampleDelay",
+													"origin" : "AUSampleDelay.auinfo",
+													"type" : "AudioUnit",
+													"subtype" : "AudioEffect",
+													"embed" : 0,
+													"fileref" : 													{
+														"name" : "AUSampleDelay",
+														"filename" : "AUSampleDelay_20181113.maxsnap",
+														"filepath" : "~/Documents/Max 7/Snapshots",
+														"filepos" : -1,
+														"snapshotfileid" : "a25ce17ac00772c86c76045edfa47235"
+													}
+
+												}
+ ]
+										}
+
+									}
+,
+									"style" : "",
+									"text" : "vst~ AUSampleDelay.auinfo",
+									"varname" : "vst~",
+									"viewvisibility" : 1
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"comment" : "",
+									"id" : "obj-42",
+									"index" : 2,
+									"maxclass" : "inlet",
+									"numinlets" : 0,
+									"numoutlets" : 1,
+									"outlettype" : [ "bang" ],
+									"patching_rect" : [ 214.333313, 40.0, 30.0, 30.0 ],
+									"style" : ""
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"comment" : "",
+									"id" : "obj-43",
+									"index" : 1,
+									"maxclass" : "inlet",
+									"numinlets" : 0,
+									"numoutlets" : 1,
+									"outlettype" : [ "signal" ],
+									"patching_rect" : [ 50.0, 40.0, 30.0, 30.0 ],
+									"style" : ""
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"comment" : "",
+									"id" : "obj-44",
+									"index" : 3,
+									"maxclass" : "inlet",
+									"numinlets" : 0,
+									"numoutlets" : 1,
+									"outlettype" : [ "signal" ],
+									"patching_rect" : [ 249.333313, 40.0, 30.0, 30.0 ],
+									"style" : ""
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"comment" : "",
+									"id" : "obj-45",
+									"index" : 4,
+									"maxclass" : "inlet",
+									"numinlets" : 0,
+									"numoutlets" : 1,
+									"outlettype" : [ "signal" ],
+									"patching_rect" : [ 386.0, 40.0, 30.0, 30.0 ],
+									"style" : ""
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"comment" : "",
+									"id" : "obj-46",
+									"index" : 1,
+									"maxclass" : "outlet",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 214.333313, 623.0, 30.0, 30.0 ],
+									"style" : ""
+								}
+
+							}
+ ],
+						"lines" : [ 							{
+								"patchline" : 								{
+									"destination" : [ "obj-46", 0 ],
+									"source" : [ "obj-19", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-23", 0 ],
+									"source" : [ "obj-21", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-26", 0 ],
+									"source" : [ "obj-23", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-19", 0 ],
+									"source" : [ "obj-26", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-37", 0 ],
+									"source" : [ "obj-28", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-28", 0 ],
+									"source" : [ "obj-29", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-29", 0 ],
+									"source" : [ "obj-32", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-46", 0 ],
+									"source" : [ "obj-37", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-41", 0 ],
+									"source" : [ "obj-38", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-38", 0 ],
+									"source" : [ "obj-39", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-39", 0 ],
+									"source" : [ "obj-40", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-46", 0 ],
+									"source" : [ "obj-41", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-21", 0 ],
+									"order" : 2,
+									"source" : [ "obj-42", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-32", 0 ],
+									"order" : 0,
+									"source" : [ "obj-42", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-40", 0 ],
+									"order" : 1,
+									"source" : [ "obj-42", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-19", 0 ],
+									"source" : [ "obj-43", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-41", 0 ],
+									"source" : [ "obj-44", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-37", 0 ],
+									"source" : [ "obj-45", 0 ]
+								}
+
+							}
+ ]
+					}
+,
+					"patching_rect" : [ 428.0, 530.0, 114.0, 22.0 ],
+					"saved_object_attributes" : 					{
+						"description" : "",
+						"digest" : "",
+						"globalpatchername" : "",
+						"style" : "",
+						"tags" : ""
+					}
+,
+					"style" : "",
+					"text" : "p DM.sample-delay"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-222",
 					"maxclass" : "newobj",
 					"numinlets" : 4,
@@ -1319,7 +2083,7 @@
 											"isbase64" : 1,
 											"sliderorder" : [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 ],
 											"slidervisibility" : [ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ],
-											"blob" : "325.hAGaoMGcv.y0AHv.DTfAGfPBJr.CM3.UzkGbkwUag4VclE1XzUmbkIGUtEVakQEYgQWXdIWYtQVYx0Rb0EFaoQWdWYWYxMWZu41UyUmXzkGbkIQX0YFdRDFbvw1WP.AQxUWay0BHBkFcfHjb0MGZOAAi...............D.....LjYMLM...P..IZ3HA...HPPv.......CHDW.......ABoH......TfPfA......F3SAdfK...vAAMwLy....fPPojYl....IHjn......fBEEQAtB...rPQvQPJ....LHDm......PCAAA......3PPPB......OHji...D.AA.RPVZyQG.H.vE.vA.o.fK.LC.BAfR.HE.WA.W.7F.9G..AH........f.A.........vC..................P.G."
+											"blob" : "325.hAGaoMGcv.y0AHv.DTfAGfPBJr.CM3.UzkGbkwUag4VclE1XzUmbkIGUtEVakQEYgQWXdIWYtQVYx0Rb0EFaoQWdWYWYxMWZu41UyUmXzkGbkIQX0YFdRDFbvw1WP.AQxUWay0BHBkFcfHjb0MGZOAAi...............D.....LzgEPN...P.BYRDnA...HPPPC......CHDo.......A.AD......TfPvAP.....F7SAdfK...vAAAH......fPPFZlY....IHDJ......fBEMDAgC...rPQuFvL....LHDK......PCBYI......3fvBB......OHDe...D.AA.RPVZyQG.H.vE.vA.o.fK.LC.BAfR.HE.WA.W.7F.9G..AH........f.A.........vC..................P.G."
 										}
 ,
 										"snapshotlist" : 										{
@@ -1343,7 +2107,7 @@
 														"isbase64" : 1,
 														"sliderorder" : [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 ],
 														"slidervisibility" : [ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ],
-														"blob" : "325.hAGaoMGcv.y0AHv.DTfAGfPBJr.CM3.UzkGbkwUag4VclE1XzUmbkIGUtEVakQEYgQWXdIWYtQVYx0Rb0EFaoQWdWYWYxMWZu41UyUmXzkGbkIQX0YFdRDFbvw1WP.AQxUWay0BHBkFcfHjb0MGZOAAi...............D.....LjYMLM...P..IZ3HA...HPPv.......CHDW.......ABoH......TfPfA......F3SAdfK...vAAMwLy....fPPojYl....IHjn......fBEEQAtB...rPQvQPJ....LHDm......PCAAA......3PPPB......OHji...D.AA.RPVZyQG.H.vE.vA.o.fK.LC.BAfR.HE.WA.W.7F.9G..AH........f.A.........vC..................P.G."
+														"blob" : "325.hAGaoMGcv.y0AHv.DTfAGfPBJr.CM3.UzkGbkwUag4VclE1XzUmbkIGUtEVakQEYgQWXdIWYtQVYx0Rb0EFaoQWdWYWYxMWZu41UyUmXzkGbkIQX0YFdRDFbvw1WP.AQxUWay0BHBkFcfHjb0MGZOAAi...............D.....LzgEPN...P.BYRDnA...HPPPC......CHDo.......A.AD......TfPvAP.....F7SAdfK...vAAAH......fPPFZlY....IHDJ......fBEMDAgC...rPQuFvL....LHDK......PCBYI......3fvBB......OHDe...D.AA.RPVZyQG.H.vE.vA.o.fK.LC.BAfR.HE.WA.W.7F.9G..AH........f.A.........vC..................P.G."
 													}
 ,
 													"fileref" : 													{
@@ -2593,7 +3357,7 @@
 											"isbase64" : 1,
 											"sliderorder" : [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 ],
 											"slidervisibility" : [ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ],
-											"blob" : "325.hAGaoMGcv.y0AHv.DTfAGfPBJr.CM3.UzkGbkwUag4VclE1XzUmbkIGUtEVakQEYgQWXdIWYtQVYx0Rb0EFaoQWdWYWYxMWZu41UyUmXzkGbkIQX0YFdRDFbvw1WP.AQxUWay0BHBkFcfHjb0MGZOAAi...............D.....LTIQfB...P.BABE6A...HfPP.......C.Dv.......ABwB......T.P........F7CLidM...vAAYgYlA...f.PLyLy....IDD9......fBEEN.lA...rPQcF3d....LDD9......PCBoH......3fvv.......ODDj...D.AA.RPVZyQG.H.vE.vA.o.fK.LC.BAfR.HE.WA.W.7F.9G..AH........f.A.........vC..................P.G."
+											"blob" : "325.hAGaoMGcv.y0AHv.DTfAGfPBJr.CM3.UzkGbkwUag4VclE1XzUmbkIGUtEVakQEYgQWXdIWYtQVYx0Rb0EFaoQWdWYWYxMWZu41UyUmXzkGbkIQX0YFdRDFbvw1WP.AQxUWay0BHBkFcfHjb0MGZOAAi...............D.....LD7.LH...P.Ag3gr....HPPPA......CHD........AAAE......T.PfB......F7yLyLC...vA.A.......fPPfA......IHDP......fBEkXfMC...rPQpF.R....LHDF......PCBQB......3..........ODDh...D.AA.RPVZyQG.H.vE.vA.o.fK.LC.BAfR.HE.WA.W.7F.9G..AH........f.A.........vC..................P.G."
 										}
 ,
 										"snapshotlist" : 										{
@@ -2617,7 +3381,7 @@
 														"isbase64" : 1,
 														"sliderorder" : [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 ],
 														"slidervisibility" : [ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ],
-														"blob" : "325.hAGaoMGcv.y0AHv.DTfAGfPBJr.CM3.UzkGbkwUag4VclE1XzUmbkIGUtEVakQEYgQWXdIWYtQVYx0Rb0EFaoQWdWYWYxMWZu41UyUmXzkGbkIQX0YFdRDFbvw1WP.AQxUWay0BHBkFcfHjb0MGZOAAi...............D.....LTIQfB...P.BABE6A...HfPP.......C.Dv.......ABwB......T.P........F7CLidM...vAAYgYlA...f.PLyLy....IDD9......fBEEN.lA...rPQcF3d....LDD9......PCBoH......3fvv.......ODDj...D.AA.RPVZyQG.H.vE.vA.o.fK.LC.BAfR.HE.WA.W.7F.9G..AH........f.A.........vC..................P.G."
+														"blob" : "325.hAGaoMGcv.y0AHv.DTfAGfPBJr.CM3.UzkGbkwUag4VclE1XzUmbkIGUtEVakQEYgQWXdIWYtQVYx0Rb0EFaoQWdWYWYxMWZu41UyUmXzkGbkIQX0YFdRDFbvw1WP.AQxUWay0BHBkFcfHjb0MGZOAAi...............D.....LD7.LH...P.Ag3gr....HPPPA......CHD........AAAE......T.PfB......F7yLyLC...vA.A.......fPPfA......IHDP......fBEkXfMC...rPQpF.R....LHDF......PCBQB......3..........ODDh...D.AA.RPVZyQG.H.vE.vA.o.fK.LC.BAfR.HE.WA.W.7F.9G..AH........f.A.........vC..................P.G."
 													}
 ,
 													"fileref" : 													{
@@ -3867,7 +4631,7 @@
 											"isbase64" : 1,
 											"sliderorder" : [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 ],
 											"slidervisibility" : [ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ],
-											"blob" : "325.hAGaoMGcv.y0AHv.DTfAGfPBJr.CM3.UzkGbkwUag4VclE1XzUmbkIGUtEVakQEYgQWXdIWYtQVYx0Rb0EFaoQWdWYWYxMWZu41UyUmXzkGbkIQX0YFdRDFbvw1WP.AQxUWay0BHBkFcfHjb0MGZOAAi...............D.....LDlD5O...P.BYQFZB...HfPrB......CHDI.......ABAJ......TfP7.......FzCyL2L...vAAM2Ly....fPPIjol....IDDt......fBEIM.iB...rPQbQvd....LHDr......PCBYJ......3.vfC......ODDn...D.AA.RPVZyQG.H.vE.vA.o.fK.LC.BAfR.HE.WA.W.7F.9G..AH........f.A.........vC..................P.G."
+											"blob" : "325.hAGaoMGcv.y0AHv.DTfAGfPBJr.CM3.UzkGbkwUag4VclE1XzUmbkIGUtEVakQEYgQWXdIWYtQVYx0Rb0EFaoQWdWYWYxMWZu41UyUmXzkGbkIQX0YFdRDFbvw1WP.AQxUWay0BHBkFcfHjb0MGZOAAi...............D.....LDlD5O...P.BYPHKC...HfP3B......CDDb.D.....ABwB......T..........F7STqWH...vAAQHyMC...fPPCNyL....IHDf......fBEwEA6A...r.QHwQy....L7Cf......PCBgJ......3PvPA......O.DP...D.AA.RPVZyQG.H.vE.vA.o.fK.LC.BAfR.HE.WA.W.7F.9G..AH........f.A.........vC..................P.G."
 										}
 ,
 										"snapshotlist" : 										{
@@ -3891,7 +4655,7 @@
 														"isbase64" : 1,
 														"sliderorder" : [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 ],
 														"slidervisibility" : [ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ],
-														"blob" : "325.hAGaoMGcv.y0AHv.DTfAGfPBJr.CM3.UzkGbkwUag4VclE1XzUmbkIGUtEVakQEYgQWXdIWYtQVYx0Rb0EFaoQWdWYWYxMWZu41UyUmXzkGbkIQX0YFdRDFbvw1WP.AQxUWay0BHBkFcfHjb0MGZOAAi...............D.....LDlD5O...P.BYQFZB...HfPrB......CHDI.......ABAJ......TfP7.......FzCyL2L...vAAM2Ly....fPPIjol....IDDt......fBEIM.iB...rPQbQvd....LHDr......PCBYJ......3.vfC......ODDn...D.AA.RPVZyQG.H.vE.vA.o.fK.LC.BAfR.HE.WA.W.7F.9G..AH........f.A.........vC..................P.G."
+														"blob" : "325.hAGaoMGcv.y0AHv.DTfAGfPBJr.CM3.UzkGbkwUag4VclE1XzUmbkIGUtEVakQEYgQWXdIWYtQVYx0Rb0EFaoQWdWYWYxMWZu41UyUmXzkGbkIQX0YFdRDFbvw1WP.AQxUWay0BHBkFcfHjb0MGZOAAi...............D.....LDlD5O...P.BYPHKC...HfP3B......CDDb.D.....ABwB......T..........F7STqWH...vAAQHyMC...fPPCNyL....IHDf......fBEwEA6A...r.QHwQy....L7Cf......PCBgJ......3PvPA......O.DP...D.AA.RPVZyQG.H.vE.vA.o.fK.LC.BAfR.HE.WA.W.7F.9G..AH........f.A.........vC..................P.G."
 													}
 ,
 													"fileref" : 													{
@@ -4113,7 +4877,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 0.0, 0.0, 640.0, 480.0 ],
+						"rect" : [ 59.0, 104.0, 920.0, 662.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -4140,6 +4904,7 @@
 						"tags" : "",
 						"style" : "",
 						"subpatcher_template" : "",
+						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-43",
@@ -4147,7 +4912,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "int" ],
-									"patching_rect" : [ 300.0, 100.0, 75.0, 22.0 ],
+									"patching_rect" : [ 185.5, 221.0, 75.0, 22.0 ],
 									"style" : "",
 									"text" : "random 128"
 								}
@@ -4160,7 +4925,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "int" ],
-									"patching_rect" : [ 215.0, 100.0, 75.0, 22.0 ],
+									"patching_rect" : [ 137.25, 199.0, 75.0, 22.0 ],
 									"style" : "",
 									"text" : "random 128"
 								}
@@ -4173,7 +4938,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "int" ],
-									"patching_rect" : [ 132.0, 100.0, 75.0, 22.0 ],
+									"patching_rect" : [ 134.0, 163.0, 75.0, 22.0 ],
 									"style" : "",
 									"text" : "random 128"
 								}
@@ -4186,7 +4951,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "int" ],
-									"patching_rect" : [ 50.0, 100.0, 75.0, 22.0 ],
+									"patching_rect" : [ 52.0, 163.0, 75.0, 22.0 ],
 									"style" : "",
 									"text" : "random 128"
 								}
@@ -4199,7 +4964,7 @@
 									"numinlets" : 5,
 									"numoutlets" : 2,
 									"outlettype" : [ "signal", "signal" ],
-									"patching_rect" : [ 141.5, 169.0, 128.0, 22.0 ],
+									"patching_rect" : [ 55.5, 245.0, 128.0, 22.0 ],
 									"style" : "",
 									"text" : "yafr2"
 								}
@@ -4212,7 +4977,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "int" ],
-									"patching_rect" : [ 399.0, 100.0, 75.0, 22.0 ],
+									"patching_rect" : [ 398.0, 149.0, 75.0, 22.0 ],
 									"style" : "",
 									"text" : "random 128"
 								}
@@ -4225,7 +4990,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "int" ],
-									"patching_rect" : [ 314.0, 100.0, 75.0, 22.0 ],
+									"patching_rect" : [ 359.5, 123.0, 75.0, 22.0 ],
 									"style" : "",
 									"text" : "random 128"
 								}
@@ -4238,7 +5003,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "int" ],
-									"patching_rect" : [ 231.0, 100.0, 75.0, 22.0 ],
+									"patching_rect" : [ 324.5, 99.0, 75.0, 22.0 ],
 									"style" : "",
 									"text" : "random 128"
 								}
@@ -4251,7 +5016,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "int" ],
-									"patching_rect" : [ 149.0, 100.0, 75.0, 22.0 ],
+									"patching_rect" : [ 265.5, 143.0, 75.0, 22.0 ],
 									"style" : "",
 									"text" : "random 128"
 								}
@@ -4264,7 +5029,7 @@
 									"numinlets" : 5,
 									"numoutlets" : 2,
 									"outlettype" : [ "signal", "signal" ],
-									"patching_rect" : [ 240.5, 169.0, 128.0, 22.0 ],
+									"patching_rect" : [ 275.5, 196.0, 128.0, 22.0 ],
 									"style" : "",
 									"text" : "yafr2"
 								}
@@ -4277,7 +5042,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "int" ],
-									"patching_rect" : [ 494.5, 100.0, 75.0, 22.0 ],
+									"patching_rect" : [ 680.5, 132.0, 75.0, 22.0 ],
 									"style" : "",
 									"text" : "random 128"
 								}
@@ -4290,7 +5055,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "int" ],
-									"patching_rect" : [ 409.5, 100.0, 75.0, 22.0 ],
+									"patching_rect" : [ 599.5, 132.0, 75.0, 22.0 ],
 									"style" : "",
 									"text" : "random 128"
 								}
@@ -4303,7 +5068,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "int" ],
-									"patching_rect" : [ 326.5, 100.0, 75.0, 22.0 ],
+									"patching_rect" : [ 522.5, 159.0, 75.0, 22.0 ],
 									"style" : "",
 									"text" : "random 128"
 								}
@@ -4316,7 +5081,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "int" ],
-									"patching_rect" : [ 244.5, 100.0, 75.0, 22.0 ],
+									"patching_rect" : [ 522.5, 205.0, 75.0, 22.0 ],
 									"style" : "",
 									"text" : "random 128"
 								}
@@ -4329,7 +5094,7 @@
 									"numinlets" : 5,
 									"numoutlets" : 2,
 									"outlettype" : [ "signal", "signal" ],
-									"patching_rect" : [ 336.0, 169.0, 128.0, 22.0 ],
+									"patching_rect" : [ 525.0, 265.0, 128.0, 22.0 ],
 									"style" : "",
 									"text" : "yafr2"
 								}
@@ -4358,7 +5123,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "signal" ],
-									"patching_rect" : [ 141.5, 40.0, 30.0, 30.0 ],
+									"patching_rect" : [ 136.5, 40.0, 30.0, 30.0 ],
 									"style" : ""
 								}
 
@@ -4399,7 +5164,7 @@
 									"maxclass" : "outlet",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 233.333313, 251.0, 30.0, 30.0 ],
+									"patching_rect" : [ 416.333313, 361.0, 30.0, 30.0 ],
 									"style" : ""
 								}
 
@@ -4492,14 +5257,6 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-128", 0 ],
-									"order" : 2,
-									"source" : [ "obj-138", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-129", 0 ],
 									"order" : 4,
 									"source" : [ "obj-138", 0 ]
 								}
@@ -4507,8 +5264,16 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-129", 0 ],
+									"order" : 5,
+									"source" : [ "obj-138", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-130", 0 ],
-									"order" : 7,
+									"order" : 6,
 									"source" : [ "obj-138", 0 ]
 								}
 
@@ -4516,7 +5281,7 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-131", 0 ],
-									"order" : 9,
+									"order" : 7,
 									"source" : [ "obj-138", 0 ]
 								}
 
@@ -4548,7 +5313,7 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-136", 0 ],
-									"order" : 6,
+									"order" : 2,
 									"source" : [ "obj-138", 0 ]
 								}
 
@@ -4564,7 +5329,7 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-42", 0 ],
-									"order" : 8,
+									"order" : 9,
 									"source" : [ "obj-138", 0 ]
 								}
 
@@ -4572,7 +5337,7 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-43", 0 ],
-									"order" : 5,
+									"order" : 8,
 									"source" : [ "obj-138", 0 ]
 								}
 
@@ -11282,6 +12047,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-31", 0 ],
+					"source" : [ "obj-47", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-1", 0 ],
 					"source" : [ "obj-5", 0 ]
 				}
@@ -11314,7 +12086,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-127", 3 ],
-					"order" : 1,
+					"order" : 2,
 					"source" : [ "obj-65", 0 ]
 				}
 
@@ -11322,7 +12094,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-143", 2 ],
-					"order" : 3,
+					"order" : 4,
 					"source" : [ "obj-65", 0 ]
 				}
 
@@ -11330,7 +12102,15 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-222", 1 ],
-					"order" : 2,
+					"order" : 3,
+					"source" : [ "obj-65", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-47", 1 ],
+					"order" : 1,
 					"source" : [ "obj-65", 0 ]
 				}
 
@@ -11477,7 +12257,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-127", 2 ],
-					"order" : 0,
+					"order" : 1,
 					"source" : [ "obj-89", 2 ]
 				}
 
@@ -11485,7 +12265,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-127", 1 ],
-					"order" : 0,
+					"order" : 1,
 					"source" : [ "obj-89", 1 ]
 				}
 
@@ -11493,7 +12273,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-127", 0 ],
-					"order" : 0,
+					"order" : 1,
 					"source" : [ "obj-89", 0 ]
 				}
 
@@ -11501,7 +12281,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-143", 3 ],
-					"order" : 3,
+					"order" : 4,
 					"source" : [ "obj-89", 2 ]
 				}
 
@@ -11509,7 +12289,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-143", 1 ],
-					"order" : 3,
+					"order" : 4,
 					"source" : [ "obj-89", 1 ]
 				}
 
@@ -11517,7 +12297,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-143", 0 ],
-					"order" : 3,
+					"order" : 4,
 					"source" : [ "obj-89", 0 ]
 				}
 
@@ -11525,7 +12305,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-222", 2 ],
-					"order" : 1,
+					"order" : 2,
 					"source" : [ "obj-89", 2 ]
 				}
 
@@ -11533,7 +12313,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-222", 3 ],
-					"order" : 1,
+					"order" : 2,
 					"source" : [ "obj-89", 1 ]
 				}
 
@@ -11541,7 +12321,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-222", 0 ],
-					"order" : 1,
+					"order" : 2,
 					"source" : [ "obj-89", 0 ]
 				}
 
@@ -11549,7 +12329,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-31", 0 ],
-					"order" : 2,
+					"order" : 3,
 					"source" : [ "obj-89", 2 ]
 				}
 
@@ -11557,7 +12337,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-31", 0 ],
-					"order" : 2,
+					"order" : 3,
 					"source" : [ "obj-89", 1 ]
 				}
 
@@ -11565,7 +12345,31 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-31", 0 ],
-					"order" : 2,
+					"order" : 3,
+					"source" : [ "obj-89", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-47", 2 ],
+					"order" : 0,
+					"source" : [ "obj-89", 2 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-47", 3 ],
+					"order" : 0,
+					"source" : [ "obj-89", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-47", 0 ],
+					"order" : 0,
 					"source" : [ "obj-89", 0 ]
 				}
 
@@ -11600,9 +12404,12 @@
 			}
  ],
 		"parameters" : 		{
+			"obj-222::obj-144" : [ "vst~", "vst~", 0 ],
+			"obj-47::obj-19" : [ "vst~[3]", "vst~[3]", 0 ],
 			"obj-222::obj-215" : [ "vst~[2]", "vst~", 0 ],
+			"obj-47::obj-37" : [ "vst~[4]", "vst~[3]", 0 ],
 			"obj-222::obj-213" : [ "vst~[1]", "vst~", 0 ],
-			"obj-222::obj-144" : [ "vst~", "vst~", 0 ]
+			"obj-47::obj-41" : [ "vst~[5]", "vst~[3]", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
@@ -11614,6 +12421,27 @@
 			}
 , 			{
 				"name" : "AUDistortion.maxsnap",
+				"bootpath" : "~/Documents/Max 7/Snapshots",
+				"patcherrelativepath" : "../../../../../Max 7/Snapshots",
+				"type" : "mx@s",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "AUSampleDelay_20181113_1.maxsnap",
+				"bootpath" : "~/Documents/Max 7/Snapshots",
+				"patcherrelativepath" : "../../../../../Max 7/Snapshots",
+				"type" : "mx@s",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "AUSampleDelay.maxsnap",
+				"bootpath" : "~/Documents/Max 7/Snapshots",
+				"patcherrelativepath" : "../../../../../Max 7/Snapshots",
+				"type" : "mx@s",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "AUSampleDelay_20181113.maxsnap",
 				"bootpath" : "~/Documents/Max 7/Snapshots",
 				"patcherrelativepath" : "../../../../../Max 7/Snapshots",
 				"type" : "mx@s",
