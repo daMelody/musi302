@@ -337,32 +337,6 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-86",
-					"linecount" : 2,
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 986.0, 196.5, 150.0, 33.0 ],
-					"style" : "",
-					"text" : "determine chord possibilities in CHORDS"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-84",
-					"linecount" : 2,
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 986.0, 146.0, 150.0, 33.0 ],
-					"style" : "",
-					"text" : "determine levels for coll objects  in EFFECTS"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-81",
 					"maxclass" : "newobj",
 					"numinlets" : 2,
@@ -622,7 +596,7 @@
 , 							{
 								"box" : 								{
 									"coll_data" : 									{
-										"count" : 16,
+										"count" : 22,
 										"data" : [ 											{
 												"key" : 0,
 												"value" : [ 1 ]
@@ -686,6 +660,30 @@
 , 											{
 												"key" : 150,
 												"value" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9 ]
+											}
+, 											{
+												"key" : 160,
+												"value" : [ 1, 2, 3, 4, 5, 6, 7 ]
+											}
+, 											{
+												"key" : 165,
+												"value" : [ 1, 2, 4, 5, 6, 7 ]
+											}
+, 											{
+												"key" : 168,
+												"value" : [ 1, 4, 5, 6, 7 ]
+											}
+, 											{
+												"key" : 170,
+												"value" : [ 1, 5, 7 ]
+											}
+, 											{
+												"key" : 175,
+												"value" : [ 5 ]
+											}
+, 											{
+												"key" : 177,
+												"value" : [ 1 ]
 											}
  ]
 									}
@@ -14870,7 +14868,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 243.0, 580.0, 50.0, 22.0 ],
 									"style" : "",
-									"text" : "0"
+									"text" : "1"
 								}
 
 							}
@@ -15041,7 +15039,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 264.0, 213.5, 93.0, 22.0 ],
 									"style" : "",
-									"text" : "0."
+									"text" : "82."
 								}
 
 							}
@@ -15093,7 +15091,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 382.0, 213.5, 95.0, 22.0 ],
 									"style" : "",
-									"text" : "0."
+									"text" : "81.601982"
 								}
 
 							}
@@ -16349,8 +16347,8 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-129::obj-215" : [ "vst~[2]", "vst~", 0 ],
-			"obj-109::obj-85" : [ "vst~", "vst~", 0 ]
+			"obj-109::obj-85" : [ "vst~", "vst~", 0 ],
+			"obj-129::obj-215" : [ "vst~[2]", "vst~", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
