@@ -38,6 +38,32 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-40",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 960.0, 252.0, 43.0, 22.0 ],
+					"style" : "",
+					"text" : "zl.sort"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-39",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 964.0, 215.0, 109.0, 22.0 ],
+					"style" : "",
+					"text" : "join 2 @triggers -1"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"format" : 6,
 					"id" : "obj-56",
 					"maxclass" : "flonum",
@@ -9545,7 +9571,7 @@
 											"isbase64" : 1,
 											"sliderorder" : [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 ],
 											"slidervisibility" : [ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ],
-											"blob" : "325.hAGaoMGcv.y0AHv.DTfAGfPBJr.CM3.UzkGbkwUag4VclE1XzUmbkIGUtEVakQEYgQWXdIWYtQVYx0Rb0EFaoQWdWYWYxMWZu41UyUmXzkGbkIQX0YFdRDFbvw1WP.AQxUWay0BHBkFcfHjb0MGZOAAi...............D.....LTDRzB...P.AA3hDA...HPPfA......CHD........ABwB......TfP1B......FzS8B+H...vA+vDyLC...f.PLxby....IHjt......fBBAZ+vA...rPQfF.b....LDDp......PCBQG......3fvH.......O.Df...D.AA.RPVZyQG.H.vE.vA.o.fK.LC.BAfR.HE.WA.W.7F.9G..AH........f.A.........vC..................P.G."
+											"blob" : "325.hAGaoMGcv.y0AHv.DTfAGfPBJr.CM3.UzkGbkwUag4VclE1XzUmbkIGUtEVakQEYgQWXdIWYtQVYx0Rb0EFaoQWdWYWYxMWZu41UyUmXzkGbkIQX0YFdRDFbvw1WP.AQxUWay0BHBkFcfHjb0MGZOAAi...............D.....LTDRzB...P.AA3hDA...HPPfA......CHD........ABwB......TfP1B......FzS8B+H...vA+vDyLC...f.PLxby....IHjt......fBEoGA.....rPQ5Q......LHDR......PCBgD......3PvvC......O.Df...D.AA.RPVZyQG.H.vE.vA.o.fK.LC.BAfR.HE.WA.W.7F.9G..AH........f.A.........vC..................P.G."
 										}
 ,
 										"snapshotlist" : 										{
@@ -9569,7 +9595,7 @@
 														"isbase64" : 1,
 														"sliderorder" : [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 ],
 														"slidervisibility" : [ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ],
-														"blob" : "325.hAGaoMGcv.y0AHv.DTfAGfPBJr.CM3.UzkGbkwUag4VclE1XzUmbkIGUtEVakQEYgQWXdIWYtQVYx0Rb0EFaoQWdWYWYxMWZu41UyUmXzkGbkIQX0YFdRDFbvw1WP.AQxUWay0BHBkFcfHjb0MGZOAAi...............D.....LTDRzB...P.AA3hDA...HPPfA......CHD........ABwB......TfP1B......FzS8B+H...vA+vDyLC...f.PLxby....IHjt......fBBAZ+vA...rPQfF.b....LDDp......PCBQG......3fvH.......O.Df...D.AA.RPVZyQG.H.vE.vA.o.fK.LC.BAfR.HE.WA.W.7F.9G..AH........f.A.........vC..................P.G."
+														"blob" : "325.hAGaoMGcv.y0AHv.DTfAGfPBJr.CM3.UzkGbkwUag4VclE1XzUmbkIGUtEVakQEYgQWXdIWYtQVYx0Rb0EFaoQWdWYWYxMWZu41UyUmXzkGbkIQX0YFdRDFbvw1WP.AQxUWay0BHBkFcfHjb0MGZOAAi...............D.....LTDRzB...P.AA3hDA...HPPfA......CHD........ABwB......TfP1B......FzS8B+H...vA+vDyLC...f.PLxby....IHjt......fBEoGA.....rPQ5Q......LHDR......PCBgD......3PvvC......O.Df...D.AA.RPVZyQG.H.vE.vA.o.fK.LC.BAfR.HE.WA.W.7F.9G..AH........f.A.........vC..................P.G."
 													}
 ,
 													"fileref" : 													{
@@ -10587,8 +10613,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 294.249969, 234.0, 150.0, 20.0 ],
 					"style" : "",
-					"text" : "PANNING -- is mirrored",
-					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
+					"text" : "PANNING -- is mirrored"
 				}
 
 			}
@@ -10692,7 +10717,6 @@
 						"tags" : "",
 						"style" : "",
 						"subpatcher_template" : "",
-						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-6",
@@ -10701,7 +10725,6 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 174.0, 280.0, 95.0, 22.0 ],
-									"presentation_rect" : [ 175.25, 280.0, 0.0, 0.0 ],
 									"style" : "",
 									"text" : "scale 0 127 0 1."
 								}
@@ -10728,7 +10751,6 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 203.25, 308.0, 95.0, 22.0 ],
-									"presentation_rect" : [ 204.5, 308.0, 0.0, 0.0 ],
 									"style" : "",
 									"text" : "scale 0 127 0 1."
 								}
@@ -12256,7 +12278,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 396.0, 143.0, 50.0, 22.0 ],
 									"style" : "",
-									"text" : "8"
+									"text" : "6"
 								}
 
 							}
@@ -12269,7 +12291,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 309.0, 143.0, 50.0, 22.0 ],
 									"style" : "",
-									"text" : "2"
+									"text" : "5"
 								}
 
 							}
@@ -13745,6 +13767,20 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-40", 0 ],
+					"source" : [ "obj-39", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-24", 0 ],
+					"source" : [ "obj-40", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-137", 0 ],
 					"order" : 1,
 					"source" : [ "obj-50", 0 ]
@@ -13775,16 +13811,16 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-24", 1 ],
-					"order" : 1,
+					"destination" : [ "obj-39", 1 ],
+					"order" : 0,
 					"source" : [ "obj-53", 4 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-24", 0 ],
-					"order" : 1,
+					"destination" : [ "obj-39", 0 ],
+					"order" : 0,
 					"source" : [ "obj-53", 3 ]
 				}
 
@@ -13792,7 +13828,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-54", 0 ],
-					"order" : 0,
+					"order" : 1,
 					"source" : [ "obj-53", 3 ]
 				}
 
@@ -13800,7 +13836,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-56", 0 ],
-					"order" : 0,
+					"order" : 1,
 					"source" : [ "obj-53", 4 ]
 				}
 
@@ -14083,8 +14119,8 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-109::obj-85" : [ "vst~[6]", "vst~", 0 ],
-			"obj-129::obj-215" : [ "vst~[7]", "vst~", 0 ]
+			"obj-129::obj-215" : [ "vst~[7]", "vst~", 0 ],
+			"obj-109::obj-85" : [ "vst~[6]", "vst~", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
@@ -14134,8 +14170,8 @@
 		"styles" : [ 			{
 				"name" : "newobjYellow-1",
 				"default" : 				{
-					"fontsize" : [ 12.059008 ],
-					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+					"fontsize" : [ 12.059008 ]
 				}
 ,
 				"parentstyle" : "",
